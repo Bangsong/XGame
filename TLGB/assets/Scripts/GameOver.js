@@ -10,6 +10,10 @@ cc.Class({
             type:cc.Node,
             default:null
         },
+        score:{
+            type:cc.Label,
+            default:null
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -27,6 +31,7 @@ cc.Class({
     onLoad () {
         cc.audioEngine.stopAll();
         cc.audioEngine.play(this.gameOverAudio,false,0.5);
+        this.score.string = "最终得分：" + cc.sys.localStorage.getItem("score");
         cc.director.preloadScene("GameMain");
         this.againBtnControll();
     },

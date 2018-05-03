@@ -24,22 +24,23 @@ cc.Class({
             canvas.blinkCount--;
             this.node.destroy();
             if(canvas.blinkCount == 0){
+                cc.sys.localStorage.setItem("score",score.string);
                 cc.director.loadScene("GameOver");
             }
         }
         
-        console.log(parseInt(score.string) + 1);
         if(cc.rectIntersectsRect(player.node.getBoundingBoxToWorld(),this.noteBox())){
             if(player.node.y >= canvas.playerDefaultY+20){
                 cc.audioEngine.play(canvas.boomAudio,false,0.5);
                 this.node.destroy();
                 score.string = parseInt(score.string) + 1;
-                ////此代码可以使player不穿过ghost
-                // player.node.stopAllActions();
-                // var moveTo = cc.moveTo(0.3,cc.p(player.node.x,this.playerDefaultY)); 
-                // player.node.runAction(moveTo);
+                //此代码可以使player不穿过ghost
+                player.node.stopAllActions();
+                var moveTo = cc.moveTo(0.3,cc.p(player.node.x,canvas.playerDefaultY)); 
+                player.node.runAction(moveTo);
             }
             else{
+                cc.sys.localStorage.setItem("score",score.string);
                 cc.director.loadScene("GameOver");
             }
         }

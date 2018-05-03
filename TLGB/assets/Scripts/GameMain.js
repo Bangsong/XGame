@@ -306,6 +306,8 @@ cc.Class({
     update (dt) {
         // console.log(this.player.y + "   "+this.node.height/2);
         if(this.player.y > this.node.height/2 -20){
+            var score = cc.find("Canvas/score").getComponent(cc.Label);
+            cc.sys.localStorage.setItem("score",score.string);
             cc.director.loadScene("GameOver");
         }
     },
