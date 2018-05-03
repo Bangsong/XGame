@@ -1,1 +1,1 @@
-《小鬼乱撞》：小鬼乱撞是学Cocos Creator第一个做的小作品。
+这是我学习Cocos Creator做的第一个小作品
