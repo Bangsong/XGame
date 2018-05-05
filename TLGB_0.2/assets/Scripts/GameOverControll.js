@@ -10,7 +10,7 @@ cc.Class({
             type:cc.Node,
             default:null
         },
-        scroGroup:{
+        scorGroup:{
             type:cc.Node,
             default:null
         },
@@ -26,11 +26,11 @@ cc.Class({
         var agaginBtnRepeat = cc.repeatForever(agaginBtnRoate);
         this.agaginBtn.runAction(agaginBtnRepeat);
         //scroGroup动画
-        var scroGroupRoate = cc.rotateBy(1,13);
-        var scroGroupRoateBack = cc.rotateTo(1,13);
-        var scroGroupSeq = cc.sequence(scroGroupRoate,scroGroupRoateBack);
-        var scroGroupRepeat = cc.repeatForever(scroGroupSeq);
-        this.scroGroup.runAction(scroGroupRepeat);
+        var scorGroupRoate = cc.rotateBy(1,13);
+        var scorGroupRoateBack = cc.rotateTo(1,13);
+        var scorGrouppSeq = cc.sequence(scorGroupRoate,scorGroupRoateBack);
+        var scorGroupRepeat = cc.repeatForever(scorGrouppSeq);
+        this.scorGroup.runAction(scorGroupRepeat);
     },
     againControll () {
         this.agaginBtn.on("touchstart",function(){
@@ -42,6 +42,8 @@ cc.Class({
         cc.director.preloadScene("GameMain");
         cc.audioEngine.stopAll();
         cc.audioEngine.play(this.gameOverAudio,false,0.5);
+        var score = cc.find("Canvas/score_Group/score").getComponent(cc.Label);
+        score.string = "最终得分：" + cc.sys.localStorage.getItem("score");
         this.actionAll();
         this.againControll();
     },

@@ -12,19 +12,19 @@ cc.Class({
             default:null
         },
         jumpHeight:{
-            type:Number,
+            type:cc.Integer,
             default:90
         },
         moveSpeed:{
-            type:Number,
+            type:cc.Integer,
             default:40
         },
         moveJump:{
-            type:Number,
+            type:cc.Integer,
             default:10
         },
         playerY:{
-            type:Number,
+            type:cc.Integer,
             default:-240
         },
         _toucheTime:1,
@@ -118,18 +118,16 @@ cc.Class({
 
     onCollisionEnter: function (other) {
         // console.log("发生碰撞");
+        // console.log(this.node.y + "   "+ other.node.x);
         // console.log("this.node.y : "+ this.node.y + "this.playerY + 50: " + (this.playerY + 50))
-        if(this.node.y < this.playerY + 50){
+        if(this.node.y < this.playerY+3){
+            var score = cc.find("Canvas/scoreNode/score").getComponent(cc.Label);
+            cc.sys.localStorage.setItem("score",parseInt(score.string) - 1);//此处-1，因为Npc发生碰撞时会+1
             cc.director.loadScene("GameOver");
         }
     },
 
     onLoad () {
-        //开启碰撞检测
-        cc.director.getCollisionManager().enabled = true;
-        // cc.director.getCollisionManager().enabledDebugDraw = true;
-        // cc.director.enabledDrawBoundingBox = true;
-
         cc.director.preloadScene("GameOver");
         this.playerControll();
     },

@@ -158,7 +158,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "2fS3T019lAeYqCuwiwZs8b",
+    "fileId": "1bEMe2tNZANZESbnlPBgo9",
     "sync": false
   },
   {
@@ -218,8 +218,9 @@
       "__uuid__": "4d29410b-1b0e-4cd9-a9c1-f8f48151220a"
     },
     "jumpHeight": 90,
-    "moveSpeed": 20,
+    "moveSpeed": 40,
     "moveJump": 10,
+    "playerY": -240,
     "_toucheTime": 1,
     "_bound": 464
   },
@@ -231,7 +232,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "5cyu6mZX9JzahhkVyBteI+",
+    "fileId": "f5qNrxgSJL/5MQS6sOHp6d",
     "sync": false
   }
 ]
