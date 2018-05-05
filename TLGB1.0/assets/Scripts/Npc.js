@@ -12,7 +12,7 @@ cc.Class({
         },
         floorY:{
             type:cc.Integer,
-            default:-238
+            default:-233
         },
     },
     npcAction () {

@@ -27,11 +27,11 @@ cc.Class({
         startBtn: {
             type: cc.Node,
             default: null
-        },
-        pendant: {
-            type: cc.Node,
-            default: null
         }
+        // pendant:{
+        //     type:cc.Node,
+        //     default:null
+        // },
     },
 
     action: function action() {
@@ -61,13 +61,16 @@ cc.Class({
         var startRepeat = cc.repeatForever(startBtnSeq);
         this.startBtn.runAction(startRepeat);
         //pendant动画
-        var pendantRoate20 = cc.rotateTo(1, 20);
-        var pendantRoate_20 = cc.rotateTo(1, -20);
-        var pendantSeq = cc.sequence(pendantRoate20, pendantRoate_20);
-        var pendantRepeat = cc.repeatForever(pendantSeq);
-        this.pendant.runAction(pendantRepeat);
+        // var pendantRoate20 = cc.rotateTo(1,20);
+        // var pendantRoate_20 = cc.rotateTo(1,-20);
+        // var pendantSeq = cc.sequence(pendantRoate20,pendantRoate_20);
+        // var pendantRepeat = cc.repeatForever(pendantSeq);
+        // this.pendant.runAction(pendantRepeat);
     },
     onLoad: function onLoad() {
+        // var screenWidth = cc.view.getFrameSize().width;
+        // var screenHeight = cc.view.getFrameSize().height;
+        // console.log(screenWidth + "   " + screenHeight);
         cc.audioEngine.play(this.bgAduio, true, 0.5);
         this.action();
     }

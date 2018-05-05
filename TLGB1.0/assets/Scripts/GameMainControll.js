@@ -20,7 +20,7 @@ cc.Class({
         },
         playerY:{
             type:cc.Integer,
-            default:-240
+            default:-233
         },
         _gameHeight:345,
         boomAudio:{
@@ -51,7 +51,7 @@ cc.Class({
         //初始化玩家
         this.player = cc.instantiate(this.playerPre);
         this.node.addChild(this.player);
-        var GameWidth = this.node.width/2 - 30;
+        var GameWidth = this.node.width/2 - 40;
         var playerX = cc.randomMinus1To1() * GameWidth;
         this.player.setPosition(cc.p(playerX,this.playerY));
         //初始化heart

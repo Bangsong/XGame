@@ -31,7 +31,7 @@ cc.Class({
         },
         playerY: {
             type: cc.Integer,
-            default: -240
+            default: -233
         },
         _toucheTime: 1,
         _bound: 464
@@ -91,7 +91,7 @@ cc.Class({
                 var gameMinX = -game.node.width / 2 + 15;
                 var gameMaxX = game.node.width / 2 - 15;
                 //向右移动
-                if (locationInNode.x > 30 && playerNowX < gameMaxX) {
+                if (locationInNode.x > 40 && playerNowX < gameMaxX) {
                     //判断当前跳跃是否超过界限
                     var realSpeed = self._bound - (playerNowX + self.moveSpeed);
                     if (realSpeed < 0) realSpeed = self.moveSpeed + realSpeed;else realSpeed = self.moveSpeed;
@@ -123,7 +123,8 @@ cc.Class({
         // console.log("this.node.y : "+ this.node.y + "this.playerY + 50: " + (this.playerY + 50))
         if (this.node.y < this.playerY + 3) {
             var score = cc.find("Canvas/scoreNode/score").getComponent(cc.Label);
-            cc.sys.localStorage.setItem("score", parseInt(score.string) - 1); //此处-1，因为Npc发生碰撞时会+1
+            score.string = parseInt(score.string) - 1; //此处-1，因为Npc发生碰撞时会+1
+            cc.sys.localStorage.setItem("score", score.string);
             cc.director.loadScene("GameOver");
         }
     },

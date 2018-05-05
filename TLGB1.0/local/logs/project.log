@@ -1,105 +1,54 @@
-2018-05-05T07:04:10.122Z - normal: Load ~/.CocosCreator/settings.json
-2018-05-05T07:04:10.131Z - normal: checking language setting...
-2018-05-05T07:04:10.132Z - normal: Language: zh
-2018-05-05T07:04:12.598Z - success: protocol editor-framework registered
-2018-05-05T07:04:12.598Z - success: protocol app registered
-2018-05-05T07:04:12.598Z - success: protocol theme registered
-2018-05-05T07:04:12.598Z - success: protocol packages registered
-2018-05-05T07:04:12.598Z - success: protocol unpack registerred
-2018-05-05T07:04:12.598Z - success: protocol disable-commonjs registerred
-2018-05-05T07:04:12.755Z - normal: connected!
-2018-05-05T07:04:12.760Z - normal: Check project D:\COCOS\Code\TLGB_0.2
-2018-05-05T07:04:12.765Z - normal: Initializing Cocos2d
-2018-05-05T07:04:13.030Z - normal: Initializing Asset Database
-2018-05-05T07:04:13.098Z - success: protocol uuid registerred
-2018-05-05T07:04:13.098Z - success: protocol db registerred
-2018-05-05T07:04:13.099Z - success: protocol thumbnail registerred
-2018-05-05T07:04:13.099Z - normal: Loading editor/builtin packages
-2018-05-05T07:04:13.145Z - success: anysdk loaded
-2018-05-05T07:04:13.277Z - success: assets loaded
-2018-05-05T07:04:13.279Z - success: builder loaded
-2018-05-05T07:04:13.282Z - success: cocos-analytics loaded
-2018-05-05T07:04:13.286Z - success: console loaded
-2018-05-05T07:04:13.289Z - success: hierarchy loaded
-2018-05-05T07:04:13.292Z - success: inspector loaded
-2018-05-05T07:04:13.293Z - success: keystore loaded
-2018-05-05T07:04:13.295Z - success: node-library loaded
-2018-05-05T07:04:13.297Z - success: package-asset loaded
-2018-05-05T07:04:13.299Z - success: preferences loaded
-2018-05-05T07:04:13.301Z - success: project-exporter loaded
-2018-05-05T07:04:13.318Z - success: project-importer loaded
-2018-05-05T07:04:13.326Z - success: project-settings loaded
-2018-05-05T07:04:13.328Z - success: ui-kit loaded
-2018-05-05T07:04:13.330Z - success: ui-grid loaded
-2018-05-05T07:04:13.333Z - success: scene loaded
-2018-05-05T07:04:13.335Z - success: sprite-editor loaded
-2018-05-05T07:04:13.338Z - success: store loaded
-2018-05-05T07:04:13.342Z - success: timeline loaded
-2018-05-05T07:04:13.342Z - normal: Loading builtin packages
-2018-05-05T07:04:13.345Z - success: asset-db-debugger loaded
-2018-05-05T07:04:13.346Z - success: code-editor loaded
-2018-05-05T07:04:13.346Z - success: color-picker loaded
-2018-05-05T07:04:13.348Z - success: package-manager loaded
-2018-05-05T07:04:13.353Z - success: sdkbox loaded
-2018-05-05T07:04:13.357Z - success: tester loaded
-2018-05-05T07:04:13.358Z - success: ui-kit-preview-extra loaded
-2018-05-05T07:04:13.359Z - success: ui-kit-preview loaded
-2018-05-05T07:04:13.361Z - success: ui-tree loaded
-2018-05-05T07:04:14.591Z - normal: Initializing project D:\COCOS\Code\TLGB_0.2
-2018-05-05T07:04:14.594Z - normal: Loading packages
-2018-05-05T07:04:14.598Z - normal: Watching packages
-2018-05-05T07:04:14.611Z - normal: Run Application
-2018-05-05T07:04:15.342Z - success: preview server running at http://localhost:7456
-2018-05-05T07:04:21.129Z - normal: 1.8.1
-2018-05-05T07:13:32.569Z - warn: Script attached to "score" in prefab "scoreNode.prefab" is missing or invalid. Detailed information:
-Node path: "scoreNode/score"
-Asset url: "db://assets/Prefabs/scoreNode.prefab"
-Script UUID: "d8eca78f-24ae-4717-b401-74d0a8fbecd7"
-Class ID: "d8ecaePJK5HF7QBdNCo++zX"
-
-2018-05-05T07:14:45.353Z - warn: Script attached to "heart" in prefab "heart.prefab" is missing or invalid. Detailed information:
-Node path: "heart"
-Asset url: "db://assets/Prefabs/heart.prefab"
-Script UUID: "5967ca6b-3e29-46fd-85e7-a1eb2a5bc979"
-Class ID: "5967cprPilG/YXnoesqW8l5"
-
-2018-05-05T07:14:45.375Z - warn: Script attached to "score" in prefab "scoreNode.prefab" is missing or invalid. Detailed information:
-Node path: "scoreNode/score"
-Asset url: "db://assets/Prefabs/scoreNode.prefab"
-Script UUID: "d8eca78f-24ae-4717-b401-74d0a8fbecd7"
-Class ID: "d8ecaePJK5HF7QBdNCo++zX"
-
-2018-05-05T07:15:32.688Z - warn: Script attached to "heart" in prefab "heart.prefab" is missing or invalid. Detailed information:
-Node path: "heart"
-Asset url: "db://assets/Prefabs/heart.prefab"
-Script UUID: "5967ca6b-3e29-46fd-85e7-a1eb2a5bc979"
-Class ID: "5967cprPilG/YXnoesqW8l5"
-
-2018-05-05T07:16:00.695Z - warn: Script attached to "score" in prefab "scoreNode.prefab" is missing or invalid. Detailed information:
-Node path: "scoreNode/score"
-Asset url: "db://assets/Prefabs/scoreNode.prefab"
-Script UUID: "d8eca78f-24ae-4717-b401-74d0a8fbecd7"
-Class ID: "d8ecaePJK5HF7QBdNCo++zX"
-
-2018-05-05T07:19:38.097Z - failed: load script [Heart] failed : Error: Cannot find module 'Heart'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (C:\Software\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (C:\Software\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (C:\Software\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:1:346
-    at __define (D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:7:16)
-    at D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:59:13
-2018-05-05T07:20:37.491Z - failed: load script [Heart] failed : Error: Cannot find module 'Heart'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (C:\Software\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (C:\Software\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (C:\Software\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
-    at D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:1:346
-    at __define (D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:7:16)
-    at D:\COCOS\Code\TLGB_0.2\temp\quick-scripts\assets\Scripts\Npc.js:59:13
+2018-05-05T09:11:50.538Z - normal: Load ~/.CocosCreator/settings.json
+2018-05-05T09:11:50.542Z - normal: checking language setting...
+2018-05-05T09:11:50.542Z - normal: Language: zh
+2018-05-05T09:11:52.528Z - success: protocol editor-framework registered
+2018-05-05T09:11:52.528Z - success: protocol app registered
+2018-05-05T09:11:52.528Z - success: protocol theme registered
+2018-05-05T09:11:52.528Z - success: protocol packages registered
+2018-05-05T09:11:52.528Z - success: protocol unpack registerred
+2018-05-05T09:11:52.528Z - success: protocol disable-commonjs registerred
+2018-05-05T09:11:52.711Z - normal: connected!
+2018-05-05T09:11:52.721Z - normal: Check project D:\COCOS\Code\TLGB_0.2
+2018-05-05T09:11:52.729Z - normal: Initializing Cocos2d
+2018-05-05T09:11:52.995Z - normal: Initializing Asset Database
+2018-05-05T09:11:53.034Z - success: protocol uuid registerred
+2018-05-05T09:11:53.034Z - success: protocol db registerred
+2018-05-05T09:11:53.034Z - success: protocol thumbnail registerred
+2018-05-05T09:11:53.035Z - normal: Loading editor/builtin packages
+2018-05-05T09:11:53.062Z - success: anysdk loaded
+2018-05-05T09:11:53.198Z - success: assets loaded
+2018-05-05T09:11:53.200Z - success: builder loaded
+2018-05-05T09:11:53.203Z - success: cocos-analytics loaded
+2018-05-05T09:11:53.206Z - success: console loaded
+2018-05-05T09:11:53.209Z - success: hierarchy loaded
+2018-05-05T09:11:53.212Z - success: inspector loaded
+2018-05-05T09:11:53.214Z - success: keystore loaded
+2018-05-05T09:11:53.216Z - success: node-library loaded
+2018-05-05T09:11:53.218Z - success: package-asset loaded
+2018-05-05T09:11:53.220Z - success: preferences loaded
+2018-05-05T09:11:53.222Z - success: project-exporter loaded
+2018-05-05T09:11:53.239Z - success: project-importer loaded
+2018-05-05T09:11:53.241Z - success: project-settings loaded
+2018-05-05T09:11:53.243Z - success: ui-kit loaded
+2018-05-05T09:11:53.244Z - success: ui-grid loaded
+2018-05-05T09:11:53.247Z - success: scene loaded
+2018-05-05T09:11:53.249Z - success: sprite-editor loaded
+2018-05-05T09:11:53.252Z - success: store loaded
+2018-05-05T09:11:53.256Z - success: timeline loaded
+2018-05-05T09:11:53.256Z - normal: Loading builtin packages
+2018-05-05T09:11:53.259Z - success: asset-db-debugger loaded
+2018-05-05T09:11:53.260Z - success: code-editor loaded
+2018-05-05T09:11:53.261Z - success: color-picker loaded
+2018-05-05T09:11:53.263Z - success: package-manager loaded
+2018-05-05T09:11:53.267Z - success: sdkbox loaded
+2018-05-05T09:11:53.270Z - success: tester loaded
+2018-05-05T09:11:53.272Z - success: ui-kit-preview-extra loaded
+2018-05-05T09:11:53.273Z - success: ui-kit-preview loaded
+2018-05-05T09:11:53.275Z - success: ui-tree loaded
+2018-05-05T09:11:54.571Z - normal: Initializing project D:\COCOS\Code\TLGB_0.2
+2018-05-05T09:11:54.604Z - normal: Loading packages
+2018-05-05T09:11:54.615Z - normal: Watching packages
+2018-05-05T09:11:54.641Z - normal: Run Application
+2018-05-05T09:11:55.360Z - success: preview server running at http://localhost:7456
+2018-05-05T09:12:00.193Z - normal: 1.8.1
+2018-05-05T09:50:12.715Z - info: shutdown preview server

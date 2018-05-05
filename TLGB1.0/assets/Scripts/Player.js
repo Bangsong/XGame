@@ -25,7 +25,7 @@ cc.Class({
         },
         playerY:{
             type:cc.Integer,
-            default:-240
+            default:-233
         },
         _toucheTime:1,
         _bound:464,
@@ -85,7 +85,7 @@ cc.Class({
                 var gameMinX = (-game.node.width/2 + 15);
                 var gameMaxX = (game.node.width/2 - 15);
                 //向右移动
-                if(locationInNode.x > 30 && playerNowX < gameMaxX){
+                if(locationInNode.x > 40 && playerNowX < gameMaxX){
                     //判断当前跳跃是否超过界限
                     var realSpeed = self._bound - (playerNowX + self.moveSpeed);
                     if(realSpeed < 0)

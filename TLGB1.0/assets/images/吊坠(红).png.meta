@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3d8f6fea-5f30-408c-95a4-61f75a91f945",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "吊坠(红)": {
+      "ver": "1.0.3",
+      "uuid": "bf7499c0-6356-4bd4-b64e-8483e050756b",
+      "rawTextureUuid": "3d8f6fea-5f30-408c-95a4-61f75a91f945",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 22,
+      "trimY": 2,
+      "width": 36,
+      "height": 76,
+      "rawWidth": 80,
+      "rawHeight": 80,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

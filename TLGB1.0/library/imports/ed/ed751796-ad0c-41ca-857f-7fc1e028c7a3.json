@@ -52,8 +52,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 30,
-      "height": 30
+      "width": 40,
+      "height": 40
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -159,7 +159,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "1bEMe2tNZANZESbnlPBgo9",
+    "fileId": "basD0E16dAYp/C/zPvncAd",
     "sync": false
   },
   {
@@ -221,7 +221,7 @@
     "jumpHeight": 90,
     "moveSpeed": 40,
     "moveJump": 10,
-    "playerY": -240,
+    "playerY": -233,
     "_toucheTime": 1,
     "_bound": 464
   },
@@ -233,7 +233,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "f5qNrxgSJL/5MQS6sOHp6d",
+    "fileId": "093vf9S7xNSaBiQyX4oqBN",
     "sync": false
   }
 ]
