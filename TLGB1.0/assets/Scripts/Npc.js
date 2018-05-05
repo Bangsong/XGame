@@ -14,6 +14,10 @@ cc.Class({
             type:cc.Integer,
             default:-233
         },
+        downSpeed:{
+            type:cc.Float,
+            default:0
+        },
     },
     npcAction () {
         var scaleSmall = cc.scaleTo(0.1,0.8,0.9);
@@ -26,14 +30,16 @@ cc.Class({
     },
     onCollisionEnter: function (other) {
         // console.log("发生碰撞");
-        cc.audioEngine.play(this.boomAudio,false,0.5);
-        this.node.destroy();
-        var score = cc.find("Canvas/scoreNode/score").getComponent(cc.Label);
-        score.string = parseInt(score.string) + 1;
+        if(other.node.name != "npc"){
+            cc.audioEngine.play(this.boomAudio,false,0.5);
+            this.node.destroy();
+            var score = cc.find("Canvas/scoreNode/score").getComponent(cc.Label);
+            score.string = parseInt(score.string) + 1;
+        }
     },
     update (dt) {
-        var downSpeed = cc.random0To1() * 200 + 1;
-        this.node.y--;
+        var down = cc.random0To1() * this.downSpeed + 0.1;
+        this.node.y-=down;
         if(this.node.y <= this.floorY){
             this.node.destroy();
             cc.audioEngine.play(this.heartDestroyAudio,false,0.5);

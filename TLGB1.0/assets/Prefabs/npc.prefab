@@ -47,8 +47,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 40,
-      "height": 40
+      "width": 50,
+      "height": 50
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -126,7 +126,8 @@
     "heartDestroyAudio": {
       "__uuid__": "c29b3c75-c781-4546-a666-cce42356e0a3"
     },
-    "floorY": -233
+    "floorY": -233,
+    "downSpeed": 0.8
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -136,7 +137,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "88oIt15rpKe6CM19XrEbeu",
+    "fileId": "fdsah5dshKn6KnKzYm6ape",
     "sync": false
   }
 ]

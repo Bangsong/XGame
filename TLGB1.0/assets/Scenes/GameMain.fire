@@ -250,11 +250,11 @@
     "_rotationX": 0,
     "_rotationY": 0,
     "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleY": 1.66,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 166
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1063,8 +1063,10 @@
     "npcPre": {
       "__uuid__": "23b2685a-60a3-4254-b5fa-b17c55bc9f9a"
     },
-    "npcNewTime": 1,
-    "playerY": -233,
+    "npcNewTime": 1.5,
+    "playerY": -228,
+    "playerH": 50,
+    "npcH": 50,
     "_gameHeight": 345,
     "boomAudio": {
       "__uuid__": "47945b2f-04d4-4978-a125-e054af51c51f"

@@ -20,7 +20,15 @@ cc.Class({
         },
         playerY:{
             type:cc.Integer,
-            default:-233
+            default:-228
+        },
+        playerH:{
+            type:cc.Integer,
+            default:50
+        },
+        npcH:{
+            type:cc.Integer,
+            default:50
         },
         _gameHeight:345,
         boomAudio:{
@@ -51,7 +59,7 @@ cc.Class({
         //初始化玩家
         this.player = cc.instantiate(this.playerPre);
         this.node.addChild(this.player);
-        var GameWidth = this.node.width/2 - 40;
+        var GameWidth = this.node.width/2 - this.playerH;
         var playerX = cc.randomMinus1To1() * GameWidth;
         this.player.setPosition(cc.p(playerX,this.playerY));
         //初始化heart
@@ -61,11 +69,16 @@ cc.Class({
         this.node.addChild(this.scoreGroup);
         this.scoreGroup.setPosition(cc.p(scoreX,this.heartY));
         this.scoreGroup.children[1].string = 0;
+        //初始Npc
+        var scheduler = cc.director.getScheduler();
+        scheduler.schedule(function(){
+            this.newNpc();
+        },this,this.npcNewTime);
     },
     newNpc () {
         this.npc = cc.instantiate(this.npcPre);
         this.node.addChild(this.npc);
-        var GameWidth = this.node.width/2 - 40;
+        var GameWidth = this.node.width/2 - this.npcH;
         var npcX = cc.randomMinus1To1() * GameWidth;
         this.npc.setPosition(cc.p(npcX,this._gameHeight));
     },
@@ -86,10 +99,7 @@ cc.Class({
         cc.director.preloadScene("GameOver");
         cc.audioEngine.play(this.bgAudio,true,0.5);
         this.init();
-        var scheduler = cc.director.getScheduler();
-        scheduler.schedule(function(){
-            this.newNpc();
-        },this,this.npcNewTime);
+        
     },
     update (dt) {
         var heartNode = cc.find("Canvas/heart");

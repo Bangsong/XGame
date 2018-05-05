@@ -25,7 +25,11 @@ cc.Class({
         },
         playerY:{
             type:cc.Integer,
-            default:-233
+            default:-225
+        },
+        playerH_2:{
+            type:cc.Integer,
+            default:25
         },
         _toucheTime:1,
         _bound:464,
@@ -82,10 +86,10 @@ cc.Class({
                 var target = event.getCurrentTarget();
                 var locationInNode = target.convertToNodeSpace(touches.getLocation());
                 var playerNowX = self.node.x;
-                var gameMinX = (-game.node.width/2 + 15);
-                var gameMaxX = (game.node.width/2 - 15);
+                var gameMinX = (-game.node.width/2 + self.playerH_2);
+                var gameMaxX = (game.node.width/2 - self.playerH_2);
                 //向右移动
-                if(locationInNode.x > 40 && playerNowX < gameMaxX){
+                if(locationInNode.x > self.playerH_2 * 2 && playerNowX < gameMaxX){
                     //判断当前跳跃是否超过界限
                     var realSpeed = self._bound - (playerNowX + self.moveSpeed);
                     if(realSpeed < 0)
@@ -119,6 +123,7 @@ cc.Class({
     onCollisionEnter: function (other) {
         // console.log("发生碰撞");
         // console.log(this.node.y + "   "+ other.node.x);
+        console.log(this.node.y + "   "+ (this.playerY+3));
         // console.log("this.node.y : "+ this.node.y + "this.playerY + 50: " + (this.playerY + 50))
         if(this.node.y < this.playerY+3){
             var score = cc.find("Canvas/scoreNode/score").getComponent(cc.Label);
