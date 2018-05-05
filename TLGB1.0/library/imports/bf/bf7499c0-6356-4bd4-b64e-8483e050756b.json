@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "吊坠(红)",
+    "texture": "3d8f6fea-5f30-408c-95a4-61f75a91f945",
+    "atlas": "",
+    "rect": [
+      22,
+      2,
+      36,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

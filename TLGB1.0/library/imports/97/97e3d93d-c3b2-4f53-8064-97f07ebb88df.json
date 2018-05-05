@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "蝙蝠",
+    "texture": "027ba06b-dc78-431c-a25f-fb58fedc7aef",
+    "atlas": "",
+    "rect": [
+      3,
+      12,
+      77,
+      49
+    ],
+    "offset": [
+      1.5,
+      3.5
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

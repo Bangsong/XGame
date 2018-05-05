@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "titile_china",
+    "texture": "697b53f9-f64b-48c7-9c3d-e9832a4a2b35",
+    "atlas": "",
+    "rect": [
+      7,
+      44,
+      434,
+      103
+    ],
+    "offset": [
+      -1,
+      4.5
+    ],
+    "originalSize": [
+      450,
+      200
+    ]
+  }
+}
