@@ -9,9 +9,15 @@ cc.Class({
     },
 
     startControll () {
+        var self = this;
         //触摸事件
         this.node.on(cc.Node.EventType.TOUCH_START,function(){
-            cc.director.loadScene("GameMain");
+            var scaleToSmall = cc.scaleTo(1,0.8,0.9);
+            var scaleToBig = cc.scaleTo(1,1,1);
+            var fadeOut = cc.fadeOut(2);
+            var seq = cc.sequence(scaleToSmall,scaleToBig,fadeOut);
+            self.node.runAction(seq);
+            // cc.director.loadScene("GameMain");
         });
     },
     onLoad () {

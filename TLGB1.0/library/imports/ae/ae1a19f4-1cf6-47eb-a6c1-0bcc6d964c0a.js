@@ -68,9 +68,6 @@ cc.Class({
         // this.pendant.runAction(pendantRepeat);
     },
     onLoad: function onLoad() {
-        // var screenWidth = cc.view.getFrameSize().width;
-        // var screenHeight = cc.view.getFrameSize().height;
-        // console.log(screenWidth + "   " + screenHeight);
         cc.audioEngine.play(this.bgAduio, true, 0.5);
         this.action();
     }

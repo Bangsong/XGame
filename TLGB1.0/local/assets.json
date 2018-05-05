@@ -5,7 +5,7 @@
       "id": "mount-assets"
     },
     {
-      "folded": true,
+      "folded": false,
       "id": "4dbf0234-c89b-4837-824e-d406faeff88b"
     },
     {
@@ -62,15 +62,19 @@
     },
     {
       "folded": true,
+      "id": "24106221-34bd-449a-b8ae-864a5f930a85"
+    },
+    {
+      "folded": true,
       "id": "62f43dcf-91db-4aee-b1bb-5084a0efea0a"
     },
     {
       "folded": true,
-      "id": "3086327b-a38b-43a3-90ef-9c7a256817ff"
+      "id": "7a54eae0-2e40-4364-9a33-fdcb98e9bdc7"
     },
     {
       "folded": true,
-      "id": "7a54eae0-2e40-4364-9a33-fdcb98e9bdc7"
+      "id": "3086327b-a38b-43a3-90ef-9c7a256817ff"
     },
     {
       "folded": true,
@@ -86,11 +90,11 @@
     },
     {
       "folded": true,
-      "id": "a8588491-588b-4a82-812f-719dbf2381ac"
+      "id": "4da3afa0-a0c2-4583-b4c6-c437fd9e0f0d"
     },
     {
       "folded": true,
-      "id": "4da3afa0-a0c2-4583-b4c6-c437fd9e0f0d"
+      "id": "a8588491-588b-4a82-812f-719dbf2381ac"
     },
     {
       "folded": true,
@@ -102,15 +106,15 @@
     },
     {
       "folded": true,
-      "id": "4ffb860e-a571-4b83-9101-61e986700e9f"
-    },
-    {
-      "folded": true,
       "id": "91e898cf-64d2-471b-bb00-1ec320598dcc"
     },
     {
       "folded": true,
-      "id": "e1988174-9306-42d0-926d-0577e758eb5d"
+      "id": "4ffb860e-a571-4b83-9101-61e986700e9f"
+    },
+    {
+      "folded": true,
+      "id": "05c46b1d-0344-4e5a-8795-343da5cb936e"
     },
     {
       "folded": true,
@@ -122,7 +126,7 @@
     },
     {
       "folded": true,
-      "id": "05c46b1d-0344-4e5a-8795-343da5cb936e"
+      "id": "e1988174-9306-42d0-926d-0577e758eb5d"
     },
     {
       "folded": true,
@@ -130,11 +134,11 @@
     },
     {
       "folded": true,
-      "id": "afb8e2b4-c7e6-4f63-81f3-8f6d62948c7b"
+      "id": "bc793989-8a42-4c13-893c-2568bd27d3cd"
     },
     {
       "folded": true,
-      "id": "bc793989-8a42-4c13-893c-2568bd27d3cd"
+      "id": "afb8e2b4-c7e6-4f63-81f3-8f6d62948c7b"
     },
     {
       "folded": true,
